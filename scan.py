@@ -4,6 +4,7 @@ import sys
 import json
 import subprocess
 import re
+import requests
 
 input_file = sys.argv[1]
 output_file = sys.argv[2]
@@ -62,6 +63,46 @@ def add_ipv4_and_ipv6(domain, atype):
             ips.add(match.group(0))
     return sorted(list(ips))
 
+def add_HTTP(domain):
+    result = {
+        "http_server": None, 
+        "insecure_http": False,
+        "redirect_to_https": False, 
+        "hsts": False,
+    }
+
+    try: 
+        session = requests.Session()
+        session.max_redirects = 10
+
+        # port 80
+        response = session.get("http://" + domain, timeout=5)
+        result["insecure_http"] = True
+
+        result["http_server"] = response.headers.get("Server", None)
+
+
+        # redirect check 
+
+        path= []
+        for r in response.history: 
+            path.append(r.url)
+        path.append(response.url)
+
+        for url in path: 
+            if url[:8] == "https://":
+                result["redirect_to_https"] = True
+
+        if response.url[:8] == "https://":
+            if "Strict-Transport-Security" in response.headers:
+                result["hsts"] = True
+
+        return result
+    except (requests.exceptions.RequestException, requests.exceptions.TooManyRedirects) as e:
+        print("error: " + str(e))
+        pass
+    return result
+
     
 
 # lots of domain name resolvers, check every one of them and return all the unique ones.  
@@ -72,7 +113,13 @@ for domain in domains:
         'scan_time': current_time,
         'ipv4_addresses': add_ipv4_and_ipv6(domain.strip(), 'A'),
         'ipv6_addresses': add_ipv4_and_ipv6(domain.strip(), 'AAAA'),
+        'http_server': add_HTTP(domain.strip())['http_server'],
+        'insecure_http': add_HTTP(domain.strip())['insecure_http'],
+        'redirect_to_https': add_HTTP(domain.strip())['redirect_to_https'],
+        'hsts': add_HTTP(domain.strip())['hsts'],
+
     }
+
 
     # is json object a dict? # yes. 
 with open(output_file, 'w') as f:
