@@ -102,7 +102,7 @@ def add_HTTP(domain):
         print("error: " + str(e))
         pass
     return result
-
+# git did not commit for som reason??
 def add_TLS(domain):
     versions = []
 
