@@ -5,6 +5,7 @@ import json
 import subprocess
 import re
 import requests
+import socket
 
 input_file = sys.argv[1]
 output_file = sys.argv[2]
@@ -137,6 +138,47 @@ def add_root_ca(domain):
     
     return None
 
+def add_rdns_names(ipv4_list):
+    results = []
+
+    for ip in ipv4_list:
+
+        try:
+            result = subprocess.check_output(["nslookup", "-type=PTR", ip], timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
+            if 'name =' in result: 
+                names = re.findall(r'name\s?=\s?([^\s\n]+)', result)
+                for name in names: 
+                    results.append(name.rstrip("."))
+        except (subprocess.TimeoutExpired, subprocess.CalledProcessError) as e:
+            continue
+    return results
+
+def add_rtt(ipv4_list):
+
+    rtts = []
+
+    for ip in ipv4_list:
+        for port in [22, 80, 443]:
+            try:
+                starttime = time.time()
+                mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                mysock.settimeout(2)
+                mysock.connect((ip, port))
+                endtime = time.time()
+                mysock.close()
+
+                rtt = (endtime - starttime) * 1000
+                rtts.append(rtt)
+                break
+                
+            except socket.error:
+                continue
+    if not rtts: 
+        return None
+    else:
+        return [int(min(rtts)), int(max(rtts))]
+
+
     
 
 # lots of domain name resolvers, check every one of them and return all the unique ones.  
@@ -145,9 +187,10 @@ for domain in domains:
     current_time = time.time()
 
     http_data = add_HTTP(domain.strip())
+    ipv4_addresses = add_ipv4_and_ipv6(domain.strip(), 'A')
     domain_dict[domain.strip()] = {
         'scan_time': current_time,
-        'ipv4_addresses': add_ipv4_and_ipv6(domain.strip(), 'A'),
+        'ipv4_addresses': ipv4_addresses,
         'ipv6_addresses': add_ipv4_and_ipv6(domain.strip(), 'AAAA'),
         'http_server': http_data['http_server'],
         'insecure_http': http_data['insecure_http'],
@@ -155,6 +198,8 @@ for domain in domains:
         'hsts': http_data['hsts'],
         'tls_versions': add_TLS(domain.strip()),
         'root_ca': add_root_ca(domain.strip()),
+        'rdns_names': add_rdns_names(ipv4_addresses),
+        'rtt': add_rtt(ipv4_addresses),
 
     }
 

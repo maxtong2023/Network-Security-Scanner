@@ -8,9 +8,14 @@
             "104.17.79.30"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [],
         "redirect_to_https": false,
         "root_ca": "DigiCert Inc",
-        "scan_time": 1773170191.717938,
+        "rtt": [
+            1,
+            2
+        ],
+        "scan_time": 1773175783.8670192,
         "tls_versions": [
             "TLSv1.1",
             "TLSv1.2",
@@ -27,9 +32,18 @@
             "98.87.170.74"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "ec2-98-82-161-185.compute-1.amazonaws.com",
+            "ec2-98-87-170-71.compute-1.amazonaws.com",
+            "ec2-98-87-170-74.compute-1.amazonaws.com"
+        ],
         "redirect_to_https": true,
         "root_ca": "DigiCert Inc",
-        "scan_time": 1773170183.5509512,
+        "rtt": [
+            20,
+            21
+        ],
+        "scan_time": 1773175706.1340916,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -45,9 +59,16 @@
             "54.242.59.162"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "ec2-54-242-59-162.compute-1.amazonaws.com"
+        ],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170192.0002763,
+        "rtt": [
+            18,
+            18
+        ],
+        "scan_time": 1773175788.2144153,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -65,9 +86,14 @@
         "ipv6_addresses": [
             "2606:4700:20::"
         ],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "Google Trust Services",
-        "scan_time": 1773170196.2382498,
+        "rtt": [
+            2,
+            2
+        ],
+        "scan_time": 1773175804.6806765,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -85,9 +111,16 @@
         "ipv6_addresses": [
             "2620:0:861:ed1a::"
         ],
+        "rdns_names": [
+            "text-lb.eqiad.wikimedia.org"
+        ],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170182.9799795,
+        "rtt": [
+            18,
+            18
+        ],
+        "scan_time": 1773175703.4489872,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -102,9 +135,14 @@
             "172.66.2.166"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "Google Trust Services",
-        "scan_time": 1773170186.122119,
+        "rtt": [
+            2,
+            2
+        ],
+        "scan_time": 1773175731.3692365,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -120,9 +158,26 @@
             "140.98.193.152"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "hkn.org",
+            "ieeex.org",
+            "www.ieeex.org",
+            "ieeex.net",
+            "www.ieeex.net",
+            "www.ieeesight.org",
+            "ieeesight.org",
+            "www.hkn.org",
+            "def.ieee.org",
+            "meet-the-candidates.ieee.org",
+            "redirect.ieee.org"
+        ],
         "redirect_to_https": true,
         "root_ca": "GlobalSign nv-sa",
-        "scan_time": 1773170192.7197292,
+        "rtt": [
+            24,
+            24
+        ],
+        "scan_time": 1773175788.8893132,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -138,9 +193,14 @@
         "ipv6_addresses": [
             "2a01:111:f100:1002::"
         ],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "Internet2",
-        "scan_time": 1773170191.0059443,
+        "rtt": [
+            2,
+            2
+        ],
+        "scan_time": 1773175781.0734837,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -156,9 +216,18 @@
             "98.82.158.179"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "ec2-44-215-137-99.compute-1.amazonaws.com",
+            "ec2-98-82-155-134.compute-1.amazonaws.com",
+            "ec2-98-82-158-179.compute-1.amazonaws.com"
+        ],
         "redirect_to_https": true,
         "root_ca": "Amazon",
-        "scan_time": 1773170185.503156,
+        "rtt": [
+            20,
+            21
+        ],
+        "scan_time": 1773175724.342487,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -174,9 +243,16 @@
         "ipv6_addresses": [
             "2a03:2880:f357:22:face:b00c:0:4420"
         ],
+        "rdns_names": [
+            "instagram-p42-shv-03-ord5.fbcdn.net"
+        ],
         "redirect_to_https": true,
         "root_ca": "DigiCert Inc",
-        "scan_time": 1773170187.1964862,
+        "rtt": [
+            1,
+            1
+        ],
+        "scan_time": 1773175752.8001463,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -189,13 +265,18 @@
         "http_server": null,
         "insecure_http": true,
         "ipv4_addresses": [
-            "13.107.226.51",
-            "13.107.253.51"
+            "13.107.213.38",
+            "13.107.246.38"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "DigiCert",
-        "scan_time": 1773170189.8865986,
+        "rtt": [
+            2,
+            2
+        ],
+        "scan_time": 1773175773.8171535,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -211,9 +292,14 @@
         "ipv6_addresses": [
             "2600:3c04:e001:324:0:1991:8:25"
         ],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170195.7987804,
+        "rtt": [
+            12,
+            12
+        ],
+        "scan_time": 1773175804.1923254,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -231,9 +317,14 @@
             "2606:4700:3033::",
             "2606:4700:3037::"
         ],
+        "rdns_names": [],
         "redirect_to_https": false,
         "root_ca": "Google Trust Services",
-        "scan_time": 1773170189.1535366,
+        "rtt": [
+            2,
+            2
+        ],
+        "scan_time": 1773175768.9905865,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -251,9 +342,16 @@
         "ipv6_addresses": [
             "2600:3c03::"
         ],
+        "rdns_names": [
+            "prodcs.lwn.net"
+        ],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170193.4420178,
+        "rtt": [
+            21,
+            21
+        ],
+        "scan_time": 1773175791.6879046,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -267,9 +365,16 @@
             "165.124.149.20"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "davinci20.tech.northwestern.edu"
+        ],
         "redirect_to_https": true,
         "root_ca": "Internet2",
-        "scan_time": 1773170189.6685615,
+        "rtt": [
+            0,
+            0
+        ],
+        "scan_time": 1773175773.5635502,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -283,9 +388,16 @@
             "165.124.184.154"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "helen.cs.northwestern.edu"
+        ],
         "redirect_to_https": false,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170189.4850132,
+        "rtt": [
+            0,
+            0
+        ],
+        "scan_time": 1773175773.373219,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -301,9 +413,16 @@
         "ipv6_addresses": [
             "2606:7100:1:67::"
         ],
+        "rdns_names": [
+            "news.ycombinator.com"
+        ],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170194.0891614,
+        "rtt": [
+            51,
+            51
+        ],
+        "scan_time": 1773175792.3413806,
         "tls_versions": [
             "TLSv1.2"
         ]
@@ -318,9 +437,17 @@
         "ipv6_addresses": [
             "2620:10d:2060:1130::"
         ],
+        "rdns_names": [
+            "cnair.northwestern.edu",
+            "evcommon-caesar-vip.northwestern.edu"
+        ],
         "redirect_to_https": true,
         "root_ca": "Internet2",
-        "scan_time": 1773170188.585936,
+        "rtt": [
+            0,
+            0
+        ],
+        "scan_time": 1773175758.3034086,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -338,9 +465,17 @@
         "ipv6_addresses": [
             "2606:4700:4700::"
         ],
+        "rdns_names": [
+            "one.one.one.one",
+            "one.one.one.one"
+        ],
         "redirect_to_https": true,
         "root_ca": "SSL Corp",
-        "scan_time": 1773170196.964175,
+        "rtt": [
+            2,
+            2
+        ],
+        "scan_time": 1773175811.4741642,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -357,9 +492,14 @@
             "151.101.64.84"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "DigiCert Inc",
-        "scan_time": 1773170186.4081726,
+        "rtt": [
+            1,
+            2
+        ],
+        "scan_time": 1773175735.7272496,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -381,9 +521,14 @@
             "2a04:4e42:600::",
             "2a04:4e42::"
         ],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "DigiCert Inc",
-        "scan_time": 1773170195.3223898,
+        "rtt": [
+            1,
+            3
+        ],
+        "scan_time": 1773175795.664596,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -405,9 +550,19 @@
             "2606:50c0:8002::",
             "2606:50c0:8003::"
         ],
+        "rdns_names": [
+            "cdn-185-199-108-153.github.com",
+            "cdn-185-199-109-153.github.com",
+            "cdn-185-199-110-153.github.com",
+            "cdn-185-199-111-153.github.com"
+        ],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170197.883785,
+        "rtt": [
+            1,
+            2
+        ],
+        "scan_time": 1773175818.2897787,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -429,9 +584,19 @@
             "2606:50c0:8002::",
             "2606:50c0:8003::"
         ],
+        "rdns_names": [
+            "cdn-185-199-108-153.github.com",
+            "cdn-185-199-109-153.github.com",
+            "cdn-185-199-110-153.github.com",
+            "cdn-185-199-111-153.github.com"
+        ],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170188.8737993,
+        "rtt": [
+            1,
+            2
+        ],
+        "scan_time": 1773175760.6086254,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -445,9 +610,16 @@
             "198.252.206.1"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "stackoverflow.com"
+        ],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170197.2321413,
+        "rtt": [
+            2,
+            2
+        ],
+        "scan_time": 1773175815.7882142,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -461,9 +633,16 @@
             "3.143.61.245"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "waffles.stevetarzia.com"
+        ],
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
-        "scan_time": 1773170191.2369277,
+        "rtt": [
+            10,
+            10
+        ],
+        "scan_time": 1773175783.3744435,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -481,9 +660,19 @@
             "18.172.134.62"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "server-18-172-134-16.ord56.r.cloudfront.net",
+            "server-18-172-134-33.ord56.r.cloudfront.net",
+            "server-18-172-134-6.ord56.r.cloudfront.net",
+            "server-18-172-134-62.ord56.r.cloudfront.net"
+        ],
         "redirect_to_https": true,
         "root_ca": "Amazon",
-        "scan_time": 1773170186.9150116,
+        "rtt": [
+            1,
+            1
+        ],
+        "scan_time": 1773175744.4691226,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -497,9 +686,16 @@
             "3.215.148.80"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "ec2-3-215-148-80.compute-1.amazonaws.com"
+        ],
         "redirect_to_https": false,
         "root_ca": "Internet2",
-        "scan_time": 1773170190.4749234,
+        "rtt": [
+            20,
+            20
+        ],
+        "scan_time": 1773175778.4862902,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -513,9 +709,16 @@
             "129.105.44.20"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "web1.cs.northwestern.edu"
+        ],
         "redirect_to_https": true,
         "root_ca": "Internet2",
-        "scan_time": 1773170190.300035,
+        "rtt": [
+            0,
+            0
+        ],
+        "scan_time": 1773175778.2662039,
         "tls_versions": [
             "TLSv1.2"
         ]
@@ -525,12 +728,19 @@
         "http_server": null,
         "insecure_http": true,
         "ipv4_addresses": [
-            "173.223.108.133"
+            "23.3.132.189"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [
+            "a23-3-132-189.deploy.static.akamaitechnologies.com"
+        ],
         "redirect_to_https": true,
         "root_ca": "GlobalSign nv-sa",
-        "scan_time": 1773170187.9379776,
+        "rtt": [
+            15,
+            15
+        ],
+        "scan_time": 1773175755.6691837,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -541,12 +751,17 @@
         "http_server": "envoy",
         "insecure_http": true,
         "ipv4_addresses": [
-            "146.75.76.116"
+            "199.232.64.116"
         ],
         "ipv6_addresses": [],
+        "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "DigiCert Inc",
-        "scan_time": 1773170184.2980857,
+        "rtt": [
+            22,
+            22
+        ],
+        "scan_time": 1773175712.9775329,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
@@ -562,9 +777,16 @@
         "ipv6_addresses": [
             "2607:f8b0:400a:80c::"
         ],
+        "rdns_names": [
+            "pnseaa-an-in-f14.1e100.net"
+        ],
         "redirect_to_https": true,
         "root_ca": "Google Trust Services",
-        "scan_time": 1773170182.324357,
+        "rtt": [
+            48,
+            48
+        ],
+        "scan_time": 1773175700.6759531,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
