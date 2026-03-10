@@ -117,11 +117,25 @@ def add_TLS(domain):
 
     for version, flag in tls.items():
         try: 
-            subprocess.check_output(["openssl", "s_client", flag, "-connect", f"{domain}:443"], timeout = 2, stderr=subprocess.STDOUT)
+            subprocess.check_output(["openssl", "s_client", flag, "-connect", f"{domain}:443"], input= b'', timeout = 2, stderr=subprocess.STDOUT)
             versions.append(version)
-        except subprocess.TimeoutExpired, subprocess.CalledProcessError:
+        except (subprocess.TimeoutExpired, subprocess.CalledProcessError) as e:
             continue
     return versions
+
+def add_root_ca(domain):
+    try:
+        output = subprocess.check_output(["openssl", "s_client", "-connect", f"{domain}:443"], input=b'', timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
+        matches = re.findall(r'O\s?=\s?([^,/\n]+)', output)
+        
+        if matches:
+            root_ca = matches[-1].strip().strip('"')
+            return root_ca
+            
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+        pass
+    
+    return None
 
     
 
@@ -129,15 +143,18 @@ def add_TLS(domain):
 
 for domain in domains:
     current_time = time.time()
+
+    http_data = add_HTTP(domain.strip())
     domain_dict[domain.strip()] = {
         'scan_time': current_time,
         'ipv4_addresses': add_ipv4_and_ipv6(domain.strip(), 'A'),
         'ipv6_addresses': add_ipv4_and_ipv6(domain.strip(), 'AAAA'),
-        'http_server': add_HTTP(domain.strip())['http_server'],
-        'insecure_http': add_HTTP(domain.strip())['insecure_http'],
-        'redirect_to_https': add_HTTP(domain.strip())['redirect_to_https'],
-        'hsts': add_HTTP(domain.strip())['hsts'],
+        'http_server': http_data['http_server'],
+        'insecure_http': http_data['insecure_http'],
+        'redirect_to_https': http_data['redirect_to_https'],
+        'hsts': http_data['hsts'],
         'tls_versions': add_TLS(domain.strip()),
+        'root_ca': add_root_ca(domain.strip()),
 
     }
 

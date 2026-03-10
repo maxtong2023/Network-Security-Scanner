@@ -9,7 +9,13 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": false,
-        "scan_time": 1773166422.694885
+        "root_ca": "DigiCert Inc",
+        "scan_time": 1773170191.717938,
+        "tls_versions": [
+            "TLSv1.1",
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "amazon.com": {
         "hsts": true,
@@ -22,7 +28,14 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166398.773558
+        "root_ca": "DigiCert Inc",
+        "scan_time": 1773170183.5509512,
+        "tls_versions": [
+            "TLSv1.0",
+            "TLSv1.1",
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "cra.org": {
         "hsts": false,
@@ -33,7 +46,12 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166422.971744
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170192.0002763,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "ebpf.io": {
         "hsts": true,
@@ -48,7 +66,14 @@
             "2606:4700:20::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166433.9483662
+        "root_ca": "Google Trust Services",
+        "scan_time": 1773170196.2382498,
+        "tls_versions": [
+            "TLSv1.0",
+            "TLSv1.1",
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "en.wikipedia.org": {
         "hsts": false,
@@ -61,7 +86,12 @@
             "2620:0:861:ed1a::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166397.9908879
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170182.9799795,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "fandom.com": {
         "hsts": true,
@@ -73,7 +103,14 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166406.987859
+        "root_ca": "Google Trust Services",
+        "scan_time": 1773170186.122119,
+        "tls_versions": [
+            "TLSv1.0",
+            "TLSv1.1",
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "ieee.org": {
         "hsts": false,
@@ -84,7 +121,12 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166424.5438788
+        "root_ca": "GlobalSign nv-sa",
+        "scan_time": 1773170192.7197292,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "illinois.edu": {
         "hsts": true,
@@ -97,7 +139,12 @@
             "2a01:111:f100:1002::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166421.569653
+        "root_ca": "Internet2",
+        "scan_time": 1773170191.0059443,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "imdb.com": {
         "hsts": false,
@@ -110,32 +157,49 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166405.857676
+        "root_ca": "Amazon",
+        "scan_time": 1773170185.503156,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "instagram.com": {
         "hsts": true,
         "http_server": null,
         "insecure_http": true,
         "ipv4_addresses": [
-            "157.240.254.174"
+            "57.144.174.34"
         ],
         "ipv6_addresses": [
-            "2a03:2880:f275:1e9:face:b00c:0:4420"
+            "2a03:2880:f357:22:face:b00c:0:4420"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166411.053301
+        "root_ca": "DigiCert Inc",
+        "scan_time": 1773170187.1964862,
+        "tls_versions": [
+            "TLSv1.0",
+            "TLSv1.1",
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "kellogg.northwestern.edu": {
         "hsts": false,
         "http_server": null,
         "insecure_http": true,
         "ipv4_addresses": [
-            "13.107.213.40",
-            "13.107.246.40"
+            "13.107.226.51",
+            "13.107.253.51"
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166419.519503
+        "root_ca": "DigiCert",
+        "scan_time": 1773170189.8865986,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "kernel.org": {
         "hsts": true,
@@ -148,7 +212,12 @@
             "2600:3c04:e001:324:0:1991:8:25"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166433.15938
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170195.7987804,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "lab.senlin.dev": {
         "hsts": false,
@@ -163,7 +232,14 @@
             "2606:4700:3037::"
         ],
         "redirect_to_https": false,
-        "scan_time": 1773166418.5755892
+        "root_ca": "Google Trust Services",
+        "scan_time": 1773170189.1535366,
+        "tls_versions": [
+            "TLSv1.0",
+            "TLSv1.1",
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "lwn.net": {
         "hsts": true,
@@ -176,7 +252,12 @@
             "2600:3c03::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166426.071425
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170193.4420178,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "mccormick.northwestern.edu": {
         "hsts": false,
@@ -187,7 +268,12 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166419.062418
+        "root_ca": "Internet2",
+        "scan_time": 1773170189.6685615,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "networks.cs.northwestern.edu": {
         "hsts": false,
@@ -198,7 +284,12 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": false,
-        "scan_time": 1773166418.916863
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170189.4850132,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "news.ycombinator.com": {
         "hsts": true,
@@ -211,7 +302,11 @@
             "2606:7100:1:67::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166427.8537788
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170194.0891614,
+        "tls_versions": [
+            "TLSv1.2"
+        ]
     },
     "northwestern.edu": {
         "hsts": false,
@@ -224,7 +319,13 @@
             "2620:10d:2060:1130::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166416.1272058
+        "root_ca": "Internet2",
+        "scan_time": 1773170188.585936,
+        "tls_versions": [
+            "TLSv1.0",
+            "TLSv1.1",
+            "TLSv1.2"
+        ]
     },
     "one.one.one.one": {
         "hsts": false,
@@ -238,7 +339,12 @@
             "2606:4700:4700::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166436.3114629
+        "root_ca": "SSL Corp",
+        "scan_time": 1773170196.964175,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "pinterest.com": {
         "hsts": true,
@@ -252,7 +358,12 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166407.641294
+        "root_ca": "DigiCert Inc",
+        "scan_time": 1773170186.4081726,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "reddit.com": {
         "hsts": true,
@@ -271,7 +382,12 @@
             "2a04:4e42::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166431.1086771
+        "root_ca": "DigiCert Inc",
+        "scan_time": 1773170195.3223898,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "rust-lang.org": {
         "hsts": false,
@@ -290,7 +406,12 @@
             "2606:50c0:8003::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166438.6796548
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170197.883785,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "senlin.dev": {
         "hsts": false,
@@ -309,7 +430,12 @@
             "2606:50c0:8003::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166417.4005451
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170188.8737993,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "stackoverflow.com": {
         "hsts": true,
@@ -320,7 +446,12 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166436.881475
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170197.2321413,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "stevetarzia.com": {
         "hsts": false,
@@ -331,7 +462,13 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166421.9508212
+        "root_ca": "Let's Encrypt",
+        "scan_time": 1773170191.2369277,
+        "tls_versions": [
+            "TLSv1.0",
+            "TLSv1.1",
+            "TLSv1.2"
+        ]
     },
     "tripadvisor.com": {
         "hsts": false,
@@ -345,7 +482,12 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166410.4352782
+        "root_ca": "Amazon",
+        "scan_time": 1773170186.9150116,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "uchicago.edu": {
         "hsts": false,
@@ -356,7 +498,12 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": false,
-        "scan_time": 1773166421.099911
+        "root_ca": "Internet2",
+        "scan_time": 1773170190.4749234,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "users.cs.northwestern.edu": {
         "hsts": false,
@@ -367,7 +514,11 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166420.660558
+        "root_ca": "Internet2",
+        "scan_time": 1773170190.300035,
+        "tls_versions": [
+            "TLSv1.2"
+        ]
     },
     "walmart.com": {
         "hsts": true,
@@ -378,30 +529,47 @@
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166414.759296
+        "root_ca": "GlobalSign nv-sa",
+        "scan_time": 1773170187.9379776,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "yelp.com": {
         "hsts": true,
         "http_server": "envoy",
         "insecure_http": true,
         "ipv4_addresses": [
-            "146.75.80.116"
+            "146.75.76.116"
         ],
         "ipv6_addresses": [],
         "redirect_to_https": true,
-        "scan_time": 1773166400.849408
+        "root_ca": "DigiCert Inc",
+        "scan_time": 1773170184.2980857,
+        "tls_versions": [
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     },
     "youtube.com": {
         "hsts": true,
         "http_server": "ESF",
         "insecure_http": true,
         "ipv4_addresses": [
-            "142.251.41.142"
+            "142.250.73.110"
         ],
         "ipv6_addresses": [
-            "2607:f8b0:4009:80c::"
+            "2607:f8b0:400a:80c::"
         ],
         "redirect_to_https": true,
-        "scan_time": 1773166395.48822
+        "root_ca": "Google Trust Services",
+        "scan_time": 1773170182.324357,
+        "tls_versions": [
+            "TLSv1.0",
+            "TLSv1.1",
+            "TLSv1.2",
+            "TLSv1.3"
+        ]
     }
 }
