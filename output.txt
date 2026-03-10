@@ -1,0 +1,95 @@
+{
+    "acm.org": {
+        "scan_time": 1773109005.895384
+    },
+    "amazon.com": {
+        "scan_time": 1773109005.8953788
+    },
+    "cra.org": {
+        "scan_time": 1773109005.895384
+    },
+    "ebpf.io": {
+        "scan_time": 1773109005.895385
+    },
+    "en.wikipedia.org": {
+        "scan_time": 1773109005.8953779
+    },
+    "fandom.com": {
+        "scan_time": 1773109005.89538
+    },
+    "ieee.org": {
+        "scan_time": 1773109005.895384
+    },
+    "illinois.edu": {
+        "scan_time": 1773109005.8953831
+    },
+    "imdb.com": {
+        "scan_time": 1773109005.8953788
+    },
+    "instagram.com": {
+        "scan_time": 1773109005.895381
+    },
+    "kellogg.northwestern.edu": {
+        "scan_time": 1773109005.8953831
+    },
+    "kernel.org": {
+        "scan_time": 1773109005.895385
+    },
+    "lab.senlin.dev": {
+        "scan_time": 1773109005.895382
+    },
+    "lwn.net": {
+        "scan_time": 1773109005.895384
+    },
+    "mccormick.northwestern.edu": {
+        "scan_time": 1773109005.8953831
+    },
+    "networks.cs.northwestern.edu": {
+        "scan_time": 1773109005.895382
+    },
+    "news.ycombinator.com": {
+        "scan_time": 1773109005.895385
+    },
+    "northwestern.edu": {
+        "scan_time": 1773109005.895382
+    },
+    "one.one.one.one": {
+        "scan_time": 1773109005.895385
+    },
+    "pinterest.com": {
+        "scan_time": 1773109005.895381
+    },
+    "reddit.com": {
+        "scan_time": 1773109005.895385
+    },
+    "rust-lang.org": {
+        "scan_time": 1773109005.8953862
+    },
+    "senlin.dev": {
+        "scan_time": 1773109005.895382
+    },
+    "stackoverflow.com": {
+        "scan_time": 1773109005.8953862
+    },
+    "stevetarzia.com": {
+        "scan_time": 1773109005.8953831
+    },
+    "tripadvisor.com": {
+        "scan_time": 1773109005.895381
+    },
+    "uchicago.edu": {
+        "scan_time": 1773109005.8953831
+    },
+    "users.cs.northwestern.edu": {
+        "scan_time": 1773109005.8953831
+    },
+    "walmart.com": {
+        "scan_time": 1773109005.895382
+    },
+    "yelp.com": {
+        "scan_time": 1773109005.8953788
+    },
+    "youtube.com": {
+        "scan_time": 1773109005.8953779
+    }
+}
