@@ -103,6 +103,26 @@ def add_HTTP(domain):
         pass
     return result
 
+def add_TLS(domain):
+    versions = []
+
+    tls = {
+        "SSLv2": "-ssl2",
+        "SSLv3": "-ssl3",
+        "TLSv1.0": "-tls1",
+        "TLSv1.1": "-tls1_1",
+        "TLSv1.2": "-tls1_2",
+        "TLSv1.3": "-tls1_3",
+    }
+
+    for version, flag in tls.items():
+        try: 
+            subprocess.check_output(["openssl", "s_client", flag, "-connect", f"{domain}:443"], timeout = 2, stderr=subprocess.STDOUT)
+            versions.append(version)
+        except subprocess.TimeoutExpired, subprocess.CalledProcessError:
+            continue
+    return versions
+
     
 
 # lots of domain name resolvers, check every one of them and return all the unique ones.  
@@ -117,6 +137,7 @@ for domain in domains:
         'insecure_http': add_HTTP(domain.strip())['insecure_http'],
         'redirect_to_https': add_HTTP(domain.strip())['redirect_to_https'],
         'hsts': add_HTTP(domain.strip())['hsts'],
+        'tls_versions': add_TLS(domain.strip()),
 
     }
 
