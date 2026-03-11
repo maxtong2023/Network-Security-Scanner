@@ -6,26 +6,27 @@ import subprocess
 import re
 import requests
 import socket
+import maxminddb
 
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
 public_dns_resolvers = [
-    #'208.67.222.222',
-    #'1.1.1.1',
+    '208.67.222.222',
+    '1.1.1.1',
     '8.8.8.8',
-    #'8.26.56.26',
-    #'9.9.9.9',
-    #'94.140.14.14',
-    #'185.228.168.9',
-    #'76.76.2.0',
-    #'76.76.19.19',
-    #'129.105.49.1',
-    #'74.82.42.42',
-    #'205.171.3.65',
-    #'193.110.81.0',
-    #'147.93.130.20',
-    #'51.158.108.203',
+    '8.26.56.26',
+    '9.9.9.9',
+    '94.140.14.14',
+    '185.228.168.9',
+    '76.76.2.0',
+    '76.76.19.19',
+    '129.105.49.1',
+    '74.82.42.42',
+    '205.171.3.65',
+    '193.110.81.0',
+    '147.93.130.20',
+    '51.158.108.203',
 ]
 
 with open(input_file, 'r') as f:
@@ -44,8 +45,7 @@ def add_ipv4_and_ipv6(domain, atype):
         try:
             result = subprocess.check_output(["nslookup", "-type=" + atype, domain.strip(), server.strip()],
                 timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
-        except subprocess.TimeoutExpired:
-            print("timeout, skipping...")
+        except (subprocess.TimeoutExpired, subprocess.CalledProcessError):
             continue
 
         regex = ''
@@ -127,12 +127,19 @@ def add_TLS(domain):
 def add_root_ca(domain):
     try:
         output = subprocess.check_output(["openssl", "s_client", "-connect", f"{domain}:443"], input=b'', timeout=2, stderr=subprocess.STDOUT).decode("utf-8")
-        matches = re.findall(r'O\s?=\s?([^,/\n]+)', output)
-        
+
+        matches = re.findall(r'depth=(\d+)\s+(.*)', output)
         if matches:
-            root_ca = matches[-1].strip().strip('"')
-            return root_ca
-            
+            best_depth = -1
+            root_line = ''
+            for d, line in matches:
+                if int(d) > best_depth:
+                    best_depth = int(d)
+                    root_line = line
+            o_match = re.search(r'O\s?=\s?([^,/\n]+)', root_line)
+            if o_match:
+                return o_match.group(1).strip().strip('"')
+
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
         pass
     
@@ -178,6 +185,50 @@ def add_rtt(ipv4_list):
     else:
         return [int(min(rtts)), int(max(rtts))]
 
+def add_geolocations(ipv4_list):
+    locations = set()
+
+    try:
+        read = maxminddb.open_database('GeoLite2-City.mmdb')
+
+        for ip in ipv4_list:
+
+            data = read.get(ip)
+            if not data:
+                continue
+
+            # documentation
+            city = ''
+            if 'city' in data:
+                if 'names' in data['city']:
+                    if 'en' in data['city']['names']:
+                        city = data['city']['names']['en']
+            country = ''
+            if 'country' in data:
+                if 'names' in data['country']:
+                    if 'en' in data['country']['names']:
+                        country = data['country']['names']['en']
+            province = ''
+            if data.get('subdivisions') and len(data['subdivisions']) > 0:
+                first = data['subdivisions'][0]
+                if 'names' in first and 'en' in first['names']:
+                    province = first['names']['en']
+            location = []
+            if city:
+                location.append(city)
+            if province:
+                location.append(province)
+            if country:
+                location.append(country)
+            if location:
+                locations.add(', '.join(location))
+        read.close()
+    except Exception as e:
+        print("error: " + str(e))
+        pass
+    return sorted(locations)
+        
+
 
     
 
@@ -199,7 +250,8 @@ for domain in domains:
         'tls_versions': add_TLS(domain.strip()),
         'root_ca': add_root_ca(domain.strip()),
         'rdns_names': add_rdns_names(ipv4_addresses),
-        'rtt': add_rtt(ipv4_addresses),
+        'rtt_range': add_rtt(ipv4_addresses),
+        'geo_locations': add_geolocations(ipv4_addresses),
 
     }
 

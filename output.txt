@@ -1,5 +1,6 @@
 {
     "acm.org": {
+        "geo_locations": [],
         "hsts": false,
         "http_server": "cloudflare",
         "insecure_http": true,
@@ -12,10 +13,10 @@
         "redirect_to_https": false,
         "root_ca": "DigiCert Inc",
         "rtt": [
-            1,
+            2,
             2
         ],
-        "scan_time": 1773175783.8670192,
+        "scan_time": 1773178072.0959992,
         "tls_versions": [
             "TLSv1.1",
             "TLSv1.2",
@@ -23,6 +24,9 @@
         ]
     },
     "amazon.com": {
+        "geo_locations": [
+            "Ashburn, Virginia, United States"
+        ],
         "hsts": true,
         "http_server": "Server",
         "insecure_http": true,
@@ -40,10 +44,10 @@
         "redirect_to_https": true,
         "root_ca": "DigiCert Inc",
         "rtt": [
-            20,
-            21
+            19,
+            23
         ],
-        "scan_time": 1773175706.1340916,
+        "scan_time": 1773177995.058859,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -52,6 +56,9 @@
         ]
     },
     "cra.org": {
+        "geo_locations": [
+            "Ashburn, Virginia, United States"
+        ],
         "hsts": false,
         "http_server": "Pagely-ARES/1.22.2",
         "insecure_http": true,
@@ -65,16 +72,17 @@
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
         "rtt": [
-            18,
-            18
+            19,
+            19
         ],
-        "scan_time": 1773175788.2144153,
+        "scan_time": 1773178076.4226718,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "ebpf.io": {
+        "geo_locations": [],
         "hsts": true,
         "http_server": "cloudflare",
         "insecure_http": true,
@@ -90,10 +98,10 @@
         "redirect_to_https": true,
         "root_ca": "Google Trust Services",
         "rtt": [
-            2,
+            1,
             2
         ],
-        "scan_time": 1773175804.6806765,
+        "scan_time": 1773178095.0142565,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -102,6 +110,9 @@
         ]
     },
     "en.wikipedia.org": {
+        "geo_locations": [
+            "United States"
+        ],
         "hsts": false,
         "http_server": "HAProxy",
         "insecure_http": true,
@@ -120,13 +131,14 @@
             18,
             18
         ],
-        "scan_time": 1773175703.4489872,
+        "scan_time": 1773177992.4700363,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "fandom.com": {
+        "geo_locations": [],
         "hsts": true,
         "http_server": "cloudflare",
         "insecure_http": true,
@@ -142,7 +154,7 @@
             2,
             2
         ],
-        "scan_time": 1773175731.3692365,
+        "scan_time": 1773178019.724581,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -151,6 +163,9 @@
         ]
     },
     "ieee.org": {
+        "geo_locations": [
+            "Hoffman, New Jersey, United States"
+        ],
         "hsts": false,
         "http_server": null,
         "insecure_http": true,
@@ -159,9 +174,6 @@
         ],
         "ipv6_addresses": [],
         "rdns_names": [
-            "hkn.org",
-            "ieeex.org",
-            "www.ieeex.org",
             "ieeex.net",
             "www.ieeex.net",
             "www.ieeesight.org",
@@ -169,21 +181,27 @@
             "www.hkn.org",
             "def.ieee.org",
             "meet-the-candidates.ieee.org",
-            "redirect.ieee.org"
+            "redirect.ieee.org",
+            "hkn.org",
+            "ieeex.org",
+            "www.ieeex.org"
         ],
         "redirect_to_https": true,
         "root_ca": "GlobalSign nv-sa",
         "rtt": [
-            24,
-            24
+            25,
+            25
         ],
-        "scan_time": 1773175788.8893132,
+        "scan_time": 1773178077.1546926,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "illinois.edu": {
+        "geo_locations": [
+            "Chicago, Illinois, United States"
+        ],
         "hsts": true,
         "http_server": "nginx/1.28.1",
         "insecure_http": true,
@@ -200,13 +218,16 @@
             2,
             2
         ],
-        "scan_time": 1773175781.0734837,
+        "scan_time": 1773178069.2690294,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "imdb.com": {
+        "geo_locations": [
+            "Ashburn, Virginia, United States"
+        ],
         "hsts": false,
         "http_server": "CloudFront",
         "insecure_http": true,
@@ -224,16 +245,19 @@
         "redirect_to_https": true,
         "root_ca": "Amazon",
         "rtt": [
-            20,
-            21
+            19,
+            23
         ],
-        "scan_time": 1773175724.342487,
+        "scan_time": 1773178012.9125333,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "instagram.com": {
+        "geo_locations": [
+            "Chicago, Illinois, United States"
+        ],
         "hsts": true,
         "http_server": null,
         "insecure_http": true,
@@ -252,7 +276,7 @@
             1,
             1
         ],
-        "scan_time": 1773175752.8001463,
+        "scan_time": 1773178040.9853997,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -261,6 +285,9 @@
         ]
     },
     "kellogg.northwestern.edu": {
+        "geo_locations": [
+            "United States"
+        ],
         "hsts": false,
         "http_server": null,
         "insecure_http": true,
@@ -276,13 +303,16 @@
             2,
             2
         ],
-        "scan_time": 1773175773.8171535,
+        "scan_time": 1773178061.9396074,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "kernel.org": {
+        "geo_locations": [
+            "Toronto, Ontario, Canada"
+        ],
         "hsts": true,
         "http_server": "nginx",
         "insecure_http": true,
@@ -296,16 +326,17 @@
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
         "rtt": [
-            12,
-            12
+            11,
+            11
         ],
-        "scan_time": 1773175804.1923254,
+        "scan_time": 1773178094.516853,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "lab.senlin.dev": {
+        "geo_locations": [],
         "hsts": false,
         "http_server": "cloudflare",
         "insecure_http": true,
@@ -321,10 +352,10 @@
         "redirect_to_https": false,
         "root_ca": "Google Trust Services",
         "rtt": [
-            2,
+            1,
             2
         ],
-        "scan_time": 1773175768.9905865,
+        "scan_time": 1773178057.0839555,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -333,6 +364,9 @@
         ]
     },
     "lwn.net": {
+        "geo_locations": [
+            "Cedar Knolls, New Jersey, United States"
+        ],
         "hsts": true,
         "http_server": "Apache/2.4.62 (CentOS Stream) OpenSSL/3.5.5",
         "insecure_http": true,
@@ -351,13 +385,16 @@
             21,
             21
         ],
-        "scan_time": 1773175791.6879046,
+        "scan_time": 1773178079.8662026,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "mccormick.northwestern.edu": {
+        "geo_locations": [
+            "Villa Park, Illinois, United States"
+        ],
         "hsts": false,
         "http_server": "Apache/2.4.41 (Ubuntu)",
         "insecure_http": true,
@@ -374,13 +411,16 @@
             0,
             0
         ],
-        "scan_time": 1773175773.5635502,
+        "scan_time": 1773178061.7011602,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "networks.cs.northwestern.edu": {
+        "geo_locations": [
+            "United States"
+        ],
         "hsts": false,
         "http_server": "Caddy",
         "insecure_http": true,
@@ -397,13 +437,16 @@
             0,
             0
         ],
-        "scan_time": 1773175773.373219,
+        "scan_time": 1773178061.4889627,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "news.ycombinator.com": {
+        "geo_locations": [
+            "United States"
+        ],
         "hsts": true,
         "http_server": "nginx",
         "insecure_http": true,
@@ -419,15 +462,18 @@
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
         "rtt": [
-            51,
-            51
+            52,
+            52
         ],
-        "scan_time": 1773175792.3413806,
+        "scan_time": 1773178080.5486946,
         "tls_versions": [
             "TLSv1.2"
         ]
     },
     "northwestern.edu": {
+        "geo_locations": [
+            "Skokie, Illinois, United States"
+        ],
         "hsts": false,
         "http_server": "Apache",
         "insecure_http": true,
@@ -447,7 +493,7 @@
             0,
             0
         ],
-        "scan_time": 1773175758.3034086,
+        "scan_time": 1773178046.3521984,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -455,6 +501,7 @@
         ]
     },
     "one.one.one.one": {
+        "geo_locations": [],
         "hsts": false,
         "http_server": "cloudflare",
         "insecure_http": true,
@@ -475,13 +522,16 @@
             2,
             2
         ],
-        "scan_time": 1773175811.4741642,
+        "scan_time": 1773178101.8188229,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "pinterest.com": {
+        "geo_locations": [
+            "San Francisco, California, United States"
+        ],
         "hsts": true,
         "http_server": null,
         "insecure_http": true,
@@ -497,15 +547,18 @@
         "root_ca": "DigiCert Inc",
         "rtt": [
             1,
-            2
+            3
         ],
-        "scan_time": 1773175735.7272496,
+        "scan_time": 1773178024.0871115,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "reddit.com": {
+        "geo_locations": [
+            "San Francisco, California, United States"
+        ],
         "hsts": true,
         "http_server": "snooserv",
         "insecure_http": true,
@@ -526,15 +579,19 @@
         "root_ca": "DigiCert Inc",
         "rtt": [
             1,
-            3
+            1004
         ],
-        "scan_time": 1773175795.664596,
+        "scan_time": 1773178084.0211673,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "rust-lang.org": {
+        "geo_locations": [
+            "California, United States",
+            "San Francisco, California, United States"
+        ],
         "hsts": false,
         "http_server": "GitHub.com",
         "insecure_http": true,
@@ -560,15 +617,19 @@
         "root_ca": "Let's Encrypt",
         "rtt": [
             1,
-            2
+            3
         ],
-        "scan_time": 1773175818.2897787,
+        "scan_time": 1773178108.7466202,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "senlin.dev": {
+        "geo_locations": [
+            "California, United States",
+            "San Francisco, California, United States"
+        ],
         "hsts": false,
         "http_server": "GitHub.com",
         "insecure_http": true,
@@ -593,16 +654,19 @@
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
         "rtt": [
-            1,
-            2
+            2,
+            3
         ],
-        "scan_time": 1773175760.6086254,
+        "scan_time": 1773178048.6769257,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "stackoverflow.com": {
+        "geo_locations": [
+            "United States"
+        ],
         "hsts": true,
         "http_server": "cloudflare",
         "insecure_http": true,
@@ -619,13 +683,16 @@
             2,
             2
         ],
-        "scan_time": 1773175815.7882142,
+        "scan_time": 1773178106.1565437,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "stevetarzia.com": {
+        "geo_locations": [
+            "United States"
+        ],
         "hsts": false,
         "http_server": "Apache/2.4.62 () OpenSSL/1.0.2k-fips PHP/5.4.16",
         "insecure_http": true,
@@ -639,10 +706,10 @@
         "redirect_to_https": true,
         "root_ca": "Let's Encrypt",
         "rtt": [
-            10,
-            10
+            11,
+            11
         ],
-        "scan_time": 1773175783.3744435,
+        "scan_time": 1773178071.5640228,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
@@ -650,6 +717,9 @@
         ]
     },
     "tripadvisor.com": {
+        "geo_locations": [
+            "United States"
+        ],
         "hsts": false,
         "http_server": "DataDome",
         "insecure_http": true,
@@ -669,16 +739,19 @@
         "redirect_to_https": true,
         "root_ca": "Amazon",
         "rtt": [
-            1,
-            1
+            2,
+            3
         ],
-        "scan_time": 1773175744.4691226,
+        "scan_time": 1773178032.6056721,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "uchicago.edu": {
+        "geo_locations": [
+            "Ashburn, Virginia, United States"
+        ],
         "hsts": false,
         "http_server": null,
         "insecure_http": true,
@@ -692,16 +765,19 @@
         "redirect_to_https": false,
         "root_ca": "Internet2",
         "rtt": [
-            20,
-            20
+            21,
+            21
         ],
-        "scan_time": 1773175778.4862902,
+        "scan_time": 1773178066.6472356,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "users.cs.northwestern.edu": {
+        "geo_locations": [
+            "Chicago, Illinois, United States"
+        ],
         "hsts": false,
         "http_server": "Apache",
         "insecure_http": true,
@@ -718,56 +794,65 @@
             0,
             0
         ],
-        "scan_time": 1773175778.2662039,
+        "scan_time": 1773178066.4338176,
         "tls_versions": [
             "TLSv1.2"
         ]
     },
     "walmart.com": {
+        "geo_locations": [
+            "Dallas, Texas, United States"
+        ],
         "hsts": true,
         "http_server": null,
         "insecure_http": true,
         "ipv4_addresses": [
-            "23.3.132.189"
+            "173.223.108.133"
         ],
         "ipv6_addresses": [],
         "rdns_names": [
-            "a23-3-132-189.deploy.static.akamaitechnologies.com"
+            "a173-223-108-133.deploy.static.akamaitechnologies.com"
         ],
         "redirect_to_https": true,
         "root_ca": "GlobalSign nv-sa",
         "rtt": [
-            15,
-            15
+            22,
+            22
         ],
-        "scan_time": 1773175755.6691837,
+        "scan_time": 1773178043.7520568,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "yelp.com": {
-        "hsts": true,
-        "http_server": "envoy",
+        "geo_locations": [
+            "Chicago, Illinois, United States"
+        ],
+        "hsts": false,
+        "http_server": "DataDome",
         "insecure_http": true,
         "ipv4_addresses": [
-            "199.232.64.116"
+            "146.75.76.116"
         ],
         "ipv6_addresses": [],
         "rdns_names": [],
         "redirect_to_https": true,
         "root_ca": "DigiCert Inc",
         "rtt": [
-            22,
-            22
+            3,
+            3
         ],
-        "scan_time": 1773175712.9775329,
+        "scan_time": 1773178001.9361563,
         "tls_versions": [
             "TLSv1.2",
             "TLSv1.3"
         ]
     },
     "youtube.com": {
+        "geo_locations": [
+            "United States"
+        ],
         "hsts": true,
         "http_server": "ESF",
         "insecure_http": true,
@@ -783,10 +868,10 @@
         "redirect_to_https": true,
         "root_ca": "Google Trust Services",
         "rtt": [
-            48,
-            48
+            49,
+            49
         ],
-        "scan_time": 1773175700.6759531,
+        "scan_time": 1773177989.7257,
         "tls_versions": [
             "TLSv1.0",
             "TLSv1.1",
